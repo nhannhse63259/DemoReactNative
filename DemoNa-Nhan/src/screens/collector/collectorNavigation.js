@@ -52,7 +52,7 @@ class HomeScreenNavi extends React.Component {
             .then((response) => {
                 this.setState({
                     isLoading: false,
-                    data: response
+                    data: response.data.articles
                 });
             })
             .catch((error) => {
